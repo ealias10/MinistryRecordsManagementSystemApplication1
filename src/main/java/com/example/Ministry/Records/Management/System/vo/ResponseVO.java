@@ -21,7 +21,7 @@ public class ResponseVO <T>{
     private long totalCount;
     public ResponseVO()
     {
-        this.timestamp= "";
+        this.timestamp= new SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().getTime());
         this.status=200;
         this.message="sucess";
         this.content=new ArrayList<>();
